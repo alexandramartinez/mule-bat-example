@@ -318,28 +318,28 @@
       </div>
     </div>
     <div id="sidebar">
-      <div class="test passing elem-24 " name="my_test_suite" tests="1" errors="0" failures="0" skip="0" timestamp="2023-03-29T14:41:43">
-        <div class="test-name " onclick="ToggleClass(&quot;elem-24&quot;)">
+      <div class="test failing elem-10 open" name="my_test_suite" tests="1" errors="0" failures="1" skip="0" timestamp="2023-03-29T14:47:09">
+        <div class="test-name open" onclick="ToggleClass(&quot;elem-10&quot;)">
           <b class="tree-arrow">▶︎</b>
           <span class="bullet"></span>
           <span>my_test_suite</span>
         </div>
         <div class="test-steps">
-          <div class="test passing elem-23 " name="Deck of cards" tests="3" errors="0" failures="0" skip="0" timestamp="2023-03-29T14:41:41">
-            <div class="test-name " onclick="ToggleClass(&quot;elem-23&quot;)">
+          <div class="test failing elem-9 open" name="Deck of cards" tests="1" errors="0" failures="1" skip="0" timestamp="2023-03-29T14:47:08">
+            <div class="test-name open" onclick="ToggleClass(&quot;elem-9&quot;)">
               <b class="tree-arrow">▶︎</b>
               <span class="bullet"></span>
               <span>Deck of cards</span>
             </div>
             <div class="test-steps">
-              <div class="test passing elem-8 " name="get a new deck of Cards" tests="1" errors="0" failures="0" skip="0" timestamp="2023-03-29T14:41:41">
-                <div class="test-name " onclick="ToggleClass(&quot;elem-8&quot;)">
+              <div class="test failing elem-8 open" name="get a new deck of Cards" tests="1" errors="0" failures="1" skip="0" timestamp="2023-03-29T14:47:08">
+                <div class="test-name open" onclick="ToggleClass(&quot;elem-8&quot;)">
                   <b class="tree-arrow">▶︎</b>
                   <span class="bullet"></span>
                   <span>get a new deck of Cards</span>
                 </div>
                 <div class="test-steps">
-                  <div class="test passing">
+                  <div class="test failing">
                     <div class="test-name" onclick="selectContent(&quot;elem-7&quot;)">
                       <span class="bullet"></span>
                       <span>GET https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1</span>
@@ -395,7 +395,7 @@
                         </div>
                         <div>
                           <span class="var">Cf-Ray:</span>
-                          <span>7afa3f9acc8559af-IAD</span>
+                          <span>7afa4796bc4259f2-IAD</span>
                         </div>
                         <div>
                           <span class="var">Connection:</span>
@@ -411,7 +411,7 @@
                         </div>
                         <div>
                           <span class="var">Date:</span>
-                          <span>Wed, 29 Mar 2023 18:41:41 GMT</span>
+                          <span>Wed, 29 Mar 2023 18:47:08 GMT</span>
                         </div>
                         <div>
                           <span class="var">Nel:</span>
@@ -423,7 +423,7 @@
                         </div>
                         <div>
                           <span class="var">Report-To:</span>
-                          <span>{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F%2FSjAbfh1vKP48DJSamvJhQa%2FpmnhO8db9oEfdzn%2Fsn7EV0D4gYs1bp7B2HvUVvQf5jyijYTP3RClh9szzHKwbvXrcqySOsWSM%2F9joW3mEuoj82b4elv%2B31cuUuQmLDKo8HNN4Rw7LoF"}],"group":"cf-nel","max_age":604800}</span>
+                          <span>{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=s57CF3ixqPrGk9prUwC9OH81hjhRsC1F8x2d9Cklc3jjGzOg7QTNHXT35kYEkcXRc9gnoGenGIgjXzf%2BF6eHy9r%2BJPB2H2aDaqNT7oth557qGU%2B08a98XDxdc0NA93h8Rb8AdnCJbe2L"}],"group":"cf-nel","max_age":604800}</span>
                         </div>
                         <div>
                           <span class="var">Server:</span>
@@ -450,14 +450,14 @@
                             <button type="button" class="ellipsis-expander">…</button>
                           </span>
                         </div>
-                        <pre class="req-res prettyprint elem-5">{"success": true, "deck_id": "sw63ge9wmc5p", "remaining": 52, "shuffled": true}</pre>
+                        <pre class="req-res prettyprint elem-5">{"success": true, "deck_id": "w517x0j37zpq", "remaining": 52, "shuffled": true}</pre>
                       </div>
                       <h3>Assertions</h3>
                       <div class="assertions">
-                        <div class="docs-example elem-1 ">
-                          <span class="state state-open">Passed</span>
+                        <div class="docs-example elem-1 open">
+                          <span class="state state-closed">Failed</span>
                           <span class="assertion-message clickable">
-                            <span onclick="ToggleClass(&quot;elem-1&quot;)">200 must equal 200</span>
+                            <span onclick="ToggleClass(&quot;elem-1&quot;)">200 must equal 500</span>
                             <span>
                               <span class="hidden-text-expander inline" onclick="ToggleClass(&quot;elem-1&quot;)">
                                 <button type="button" class="ellipsis-expander">…</button>
@@ -465,10 +465,10 @@
                             </span>
                           </span>
                         </div>
-                        <div class="highlight elem-1 toggable ">
+                        <div class="highlight elem-1 toggable open">
                           <pre class="code prettyprint">{
   "kind": "Assertion::Equal",
-  "expectedValue": "200",
+  "expectedValue": "500",
   "givenValue": "200"
 }</pre>
                         </div>
@@ -540,22 +540,22 @@
     }
   },
   "timers": {
-    "dns": 49.7623291015625,
-    "wait": 316.6511535644531,
-    "connect": 161.7046661376953,
-    "ssl": 0.10675299912691116,
-    "receive": 20.395164489746094,
-    "total": 549.7551879882812,
-    "send": 0.013059999793767929
+    "dns": 48.747615814208984,
+    "wait": 306.2506408691406,
+    "connect": 150.6768341064453,
+    "ssl": 0.15891699492931366,
+    "receive": 24.260210037231445,
+    "total": 531.9170532226562,
+    "send": 0.0114120002835989
   },
   "err": false,
   "response": {
     "status": 200,
     "statusText": "OK",
-    "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"remaining\": 52, \"shuffled\": true}",
+    "payload": "{\"success\": true, \"deck_id\": \"w517x0j37zpq\", \"remaining\": 52, \"shuffled\": true}",
     "body": {
       "success": true,
-      "deck_id": "sw63ge9wmc5p",
+      "deck_id": "w517x0j37zpq",
       "remaining": 52,
       "shuffled": true
     },
@@ -565,528 +565,14 @@
       "Access-Control-Allow-Origin": "*",
       "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
       "Cf-Cache-Status": "DYNAMIC",
-      "Cf-Ray": "7afa3f9acc8559af-IAD",
+      "Cf-Ray": "7afa4796bc4259f2-IAD",
       "Connection": "close",
       "Content-Encoding": "gzip",
       "Content-Type": "application/json",
-      "Date": "Wed, 29 Mar 2023 18:41:41 GMT",
+      "Date": "Wed, 29 Mar 2023 18:47:08 GMT",
       "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
       "Referrer-Policy": "same-origin",
-      "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2F%2FSjAbfh1vKP48DJSamvJhQa%2FpmnhO8db9oEfdzn%2Fsn7EV0D4gYs1bp7B2HvUVvQf5jyijYTP3RClh9szzHKwbvXrcqySOsWSM%2F9joW3mEuoj82b4elv%2B31cuUuQmLDKo8HNN4Rw7LoF\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-      "Server": "cloudflare",
-      "Transfer-Encoding": "chunked",
-      "Vary": "Origin",
-      "X-Content-Type-Options": "nosniff",
-      "X-Frame-Options": "DENY"
-    }
-  }
-}</pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="test passing elem-15 " name="get two cards" tests="1" errors="0" failures="0" skip="0" timestamp="2023-03-29T14:41:41">
-                <div class="test-name " onclick="ToggleClass(&quot;elem-15&quot;)">
-                  <b class="tree-arrow">▶︎</b>
-                  <span class="bullet"></span>
-                  <span>get two cards</span>
-                </div>
-                <div class="test-steps">
-                  <div class="test passing">
-                    <div class="test-name" onclick="selectContent(&quot;elem-14&quot;)">
-                      <span class="bullet"></span>
-                      <span>GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2</span>
-                    </div>
-                    <div class="content elem-14">
-                      <h2>GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2</h2>
-                      <h3>Request</h3>
-                      <div class="raw request">
-                        <div>
-                          <span class="method">GET </span>
-                          <a target="_blank" href="https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2">/api/deck/sw63ge9wmc5p/draw/?count=2</a>
-                          <span> HTTP/1.1</span>
-                        </div>
-                        <div>
-                          <span class="var">Connection:</span>
-                          <span>close</span>
-                        </div>
-                        <div>
-                          <span class="var">Accept:</span>
-                          <span>text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</span>
-                        </div>
-                        <div>
-                          <span class="var">Accept-Encoding:</span>
-                          <span>gzip,deflate</span>
-                        </div>
-                        <div>
-                          <span class="var">User-Agent:</span>
-                          <span>DataWeave/2.0</span>
-                        </div>
-                        <div>
-                          <span class="var">Host:</span>
-                          <span>deckofcardsapi.com:443</span>
-                        </div>
-                      </div>
-                      <h3>Response</h3>
-                      <div class="raw response">
-                        <div>
-                          <span>HTTP/1.1</span>
-                          <span class="var">200</span>
-                          <span>OK</span>
-                        </div>
-                        <div>
-                          <span class="var">Access-Control-Allow-Origin:</span>
-                          <span>*</span>
-                        </div>
-                        <div>
-                          <span class="var">Alt-Svc:</span>
-                          <span>h3=":443"; ma=86400, h3-29=":443"; ma=86400</span>
-                        </div>
-                        <div>
-                          <span class="var">Cf-Cache-Status:</span>
-                          <span>DYNAMIC</span>
-                        </div>
-                        <div>
-                          <span class="var">Cf-Ray:</span>
-                          <span>7afa3f9e9df05a28-IAD</span>
-                        </div>
-                        <div>
-                          <span class="var">Connection:</span>
-                          <span>close</span>
-                        </div>
-                        <div>
-                          <span class="var">Content-Encoding:</span>
-                          <span>gzip</span>
-                        </div>
-                        <div>
-                          <span class="var">Content-Type:</span>
-                          <span>application/json</span>
-                        </div>
-                        <div>
-                          <span class="var">Date:</span>
-                          <span>Wed, 29 Mar 2023 18:41:42 GMT</span>
-                        </div>
-                        <div>
-                          <span class="var">Nel:</span>
-                          <span>{"success_fraction":0,"report_to":"cf-nel","max_age":604800}</span>
-                        </div>
-                        <div>
-                          <span class="var">Referrer-Policy:</span>
-                          <span>same-origin</span>
-                        </div>
-                        <div>
-                          <span class="var">Report-To:</span>
-                          <span>{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7KCqjJK%2FPiwxgs%2FrzBIhvxP5gc2Y5O%2FirxzKCKRtXFXV6G79we9PbB3vSEoJAQs0mcb1ofrDsAd4F6vgoClarr1h7F3gEqC%2BV3X1KuJz9mxzn5%2BYYEti5DMSNIFsBVUdVXotkSVU1%2FIq"}],"group":"cf-nel","max_age":604800}</span>
-                        </div>
-                        <div>
-                          <span class="var">Server:</span>
-                          <span>cloudflare</span>
-                        </div>
-                        <div>
-                          <span class="var">Transfer-Encoding:</span>
-                          <span>chunked</span>
-                        </div>
-                        <div>
-                          <span class="var">Vary:</span>
-                          <span>Origin</span>
-                        </div>
-                        <div>
-                          <span class="var">X-Content-Type-Options:</span>
-                          <span>nosniff</span>
-                        </div>
-                        <div>
-                          <span class="var">X-Frame-Options:</span>
-                          <span>DENY</span>
-                        </div>
-                        <div>
-                          <span class="hidden-text-expander " onclick="ToggleClass(&quot;elem-12&quot;)">
-                            <button type="button" class="ellipsis-expander">…</button>
-                          </span>
-                        </div>
-                        <pre class="req-res prettyprint elem-12">{"success": true, "deck_id": "sw63ge9wmc5p", "cards": [{"code": "QC", "image": "https://deckofcardsapi.com/static/img/QC.png", "images": {"svg": "https://deckofcardsapi.com/static/img/QC.svg", "png": "https://deckofcardsapi.com/static/img/QC.png"}, "value": "QUEEN", "suit": "CLUBS"}, {"code": "3H", "image": "https://deckofcardsapi.com/static/img/3H.png", "images": {"svg": "https://deckofcardsapi.com/static/img/3H.svg", "png": "https://deckofcardsapi.com/static/img/3H.png"}, "value": "3", "suit": "HEARTS"}], "remaining": 50}</pre>
-                      </div>
-                      <h3>Assertions</h3>
-                      <div class="assertions">
-                        <div class="docs-example elem-9 ">
-                          <span class="state state-open">Passed</span>
-                          <span class="assertion-message clickable">
-                            <span onclick="ToggleClass(&quot;elem-9&quot;)">50 must equal 50</span>
-                            <span>
-                              <span class="hidden-text-expander inline" onclick="ToggleClass(&quot;elem-9&quot;)">
-                                <button type="button" class="ellipsis-expander">…</button>
-                              </span>
-                            </span>
-                          </span>
-                        </div>
-                        <div class="highlight elem-9 toggable ">
-                          <pre class="code prettyprint">{
-  "kind": "Assertion::Equal",
-  "expectedValue": "50",
-  "givenValue": "50"
-}</pre>
-                        </div>
-                        <div class="docs-example elem-10 ">
-                          <span class="state state-open">Passed</span>
-                          <span class="assertion-message clickable">
-                            <span onclick="ToggleClass(&quot;elem-10&quot;)">"sw63ge9wmc5p" must equal "sw63ge9wmc5p"</span>
-                            <span>
-                              <span class="hidden-text-expander inline" onclick="ToggleClass(&quot;elem-10&quot;)">
-                                <button type="button" class="ellipsis-expander">…</button>
-                              </span>
-                            </span>
-                          </span>
-                        </div>
-                        <div class="highlight elem-10 toggable ">
-                          <pre class="code prettyprint">{
-  "kind": "Assertion::Equal",
-  "expectedValue": "\"sw63ge9wmc5p\"",
-  "givenValue": "\"sw63ge9wmc5p\""
-}</pre>
-                        </div>
-                      </div>
-                      <h3>Raw data</h3>
-                      <div class="request">
-                        <div>
-                          <span class="hidden-text-expander " onclick="ToggleClass(&quot;elem-11&quot;)">
-                            <button type="button" class="ellipsis-expander">…</button>
-                          </span>
-                        </div>
-                        <pre class="req-res req-res prettyprint elem-11">{
-  "options": {
-    "headers": {
-      
-    },
-    "method": "GET",
-    "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2"
-  },
-  "request": {
-    "httpVersion": "HTTP/1.1",
-    "method": "GET",
-    "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2",
-    "path": "/api/deck/sw63ge9wmc5p/draw/?count=2",
-    "ip": "172.64.80.1",
-    "port": 443,
-    "headers": {
-      "Connection": "close",
-      "Accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
-      "Accept-Encoding": "gzip,deflate",
-      "User-Agent": "DataWeave/2.0",
-      "Host": "deckofcardsapi.com:443"
-    }
-  },
-  "timers": {
-    "dns": 0.7007820010185242,
-    "wait": 496.38092041015625,
-    "connect": 0.9531630277633667,
-    "ssl": 97.51106262207031,
-    "receive": 1.142773985862732,
-    "total": 597.2081298828125,
-    "send": 0.009366000071167946
-  },
-  "err": false,
-  "response": {
-    "status": 200,
-    "statusText": "OK",
-    "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"cards\": [{\"code\": \"QC\", \"image\": \"https://deckofcardsapi.com/static/img/QC.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/QC.svg\", \"png\": \"https://deckofcardsapi.com/static/img/QC.png\"}, \"value\": \"QUEEN\", \"suit\": \"CLUBS\"}, {\"code\": \"3H\", \"image\": \"https://deckofcardsapi.com/static/img/3H.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/3H.svg\", \"png\": \"https://deckofcardsapi.com/static/img/3H.png\"}, \"value\": \"3\", \"suit\": \"HEARTS\"}], \"remaining\": 50}",
-    "body": {
-      "success": true,
-      "deck_id": "sw63ge9wmc5p",
-      "cards": [
-        {
-          "code": "QC",
-          "image": "https://deckofcardsapi.com/static/img/QC.png",
-          "images": {
-            "svg": "https://deckofcardsapi.com/static/img/QC.svg",
-            "png": "https://deckofcardsapi.com/static/img/QC.png"
-          },
-          "value": "QUEEN",
-          "suit": "CLUBS"
-        },
-        {
-          "code": "3H",
-          "image": "https://deckofcardsapi.com/static/img/3H.png",
-          "images": {
-            "svg": "https://deckofcardsapi.com/static/img/3H.svg",
-            "png": "https://deckofcardsapi.com/static/img/3H.png"
-          },
-          "value": "3",
-          "suit": "HEARTS"
-        }
-      ],
-      "remaining": 50
-    },
-    "mime": "application/json",
-    "contentType": "application/json",
-    "headers": {
-      "Access-Control-Allow-Origin": "*",
-      "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-      "Cf-Cache-Status": "DYNAMIC",
-      "Cf-Ray": "7afa3f9e9df05a28-IAD",
-      "Connection": "close",
-      "Content-Encoding": "gzip",
-      "Content-Type": "application/json",
-      "Date": "Wed, 29 Mar 2023 18:41:42 GMT",
-      "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-      "Referrer-Policy": "same-origin",
-      "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7KCqjJK%2FPiwxgs%2FrzBIhvxP5gc2Y5O%2FirxzKCKRtXFXV6G79we9PbB3vSEoJAQs0mcb1ofrDsAd4F6vgoClarr1h7F3gEqC%2BV3X1KuJz9mxzn5%2BYYEti5DMSNIFsBVUdVXotkSVU1%2FIq\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-      "Server": "cloudflare",
-      "Transfer-Encoding": "chunked",
-      "Vary": "Origin",
-      "X-Content-Type-Options": "nosniff",
-      "X-Frame-Options": "DENY"
-    }
-  }
-}</pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="test passing elem-22 " name="get two cards" tests="1" errors="0" failures="0" skip="0" timestamp="2023-03-29T14:41:42">
-                <div class="test-name " onclick="ToggleClass(&quot;elem-22&quot;)">
-                  <b class="tree-arrow">▶︎</b>
-                  <span class="bullet"></span>
-                  <span>get two cards</span>
-                </div>
-                <div class="test-steps">
-                  <div class="test passing">
-                    <div class="test-name" onclick="selectContent(&quot;elem-21&quot;)">
-                      <span class="bullet"></span>
-                      <span>GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2</span>
-                    </div>
-                    <div class="content elem-21">
-                      <h2>GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2</h2>
-                      <h3>Request</h3>
-                      <div class="raw request">
-                        <div>
-                          <span class="method">GET </span>
-                          <a target="_blank" href="https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2">/api/deck/sw63ge9wmc5p/draw/?count=2</a>
-                          <span> HTTP/1.1</span>
-                        </div>
-                        <div>
-                          <span class="var">Connection:</span>
-                          <span>close</span>
-                        </div>
-                        <div>
-                          <span class="var">Accept:</span>
-                          <span>text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</span>
-                        </div>
-                        <div>
-                          <span class="var">Accept-Encoding:</span>
-                          <span>gzip,deflate</span>
-                        </div>
-                        <div>
-                          <span class="var">User-Agent:</span>
-                          <span>DataWeave/2.0</span>
-                        </div>
-                        <div>
-                          <span class="var">Host:</span>
-                          <span>deckofcardsapi.com:443</span>
-                        </div>
-                      </div>
-                      <h3>Response</h3>
-                      <div class="raw response">
-                        <div>
-                          <span>HTTP/1.1</span>
-                          <span class="var">200</span>
-                          <span>OK</span>
-                        </div>
-                        <div>
-                          <span class="var">Access-Control-Allow-Origin:</span>
-                          <span>*</span>
-                        </div>
-                        <div>
-                          <span class="var">Alt-Svc:</span>
-                          <span>h3=":443"; ma=86400, h3-29=":443"; ma=86400</span>
-                        </div>
-                        <div>
-                          <span class="var">Cf-Cache-Status:</span>
-                          <span>DYNAMIC</span>
-                        </div>
-                        <div>
-                          <span class="var">Cf-Ray:</span>
-                          <span>7afa3fa27eed5b65-IAD</span>
-                        </div>
-                        <div>
-                          <span class="var">Connection:</span>
-                          <span>close</span>
-                        </div>
-                        <div>
-                          <span class="var">Content-Encoding:</span>
-                          <span>gzip</span>
-                        </div>
-                        <div>
-                          <span class="var">Content-Type:</span>
-                          <span>application/json</span>
-                        </div>
-                        <div>
-                          <span class="var">Date:</span>
-                          <span>Wed, 29 Mar 2023 18:41:43 GMT</span>
-                        </div>
-                        <div>
-                          <span class="var">Nel:</span>
-                          <span>{"success_fraction":0,"report_to":"cf-nel","max_age":604800}</span>
-                        </div>
-                        <div>
-                          <span class="var">Referrer-Policy:</span>
-                          <span>same-origin</span>
-                        </div>
-                        <div>
-                          <span class="var">Report-To:</span>
-                          <span>{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZGOV3KjKk5fL15M4KrsDpcVWhgNKdmhEuXkF4FcyT%2F5xRmkjUFiEnSqAQSobuWmed1PnP%2FfDcxxIl%2BLBQSVehTnMWHN%2BSYemqOn5HGwfT9nw7ohsLilJzuR5Ep58nyKMwDvPI82jj2CT"}],"group":"cf-nel","max_age":604800}</span>
-                        </div>
-                        <div>
-                          <span class="var">Server:</span>
-                          <span>cloudflare</span>
-                        </div>
-                        <div>
-                          <span class="var">Transfer-Encoding:</span>
-                          <span>chunked</span>
-                        </div>
-                        <div>
-                          <span class="var">Vary:</span>
-                          <span>Origin</span>
-                        </div>
-                        <div>
-                          <span class="var">X-Content-Type-Options:</span>
-                          <span>nosniff</span>
-                        </div>
-                        <div>
-                          <span class="var">X-Frame-Options:</span>
-                          <span>DENY</span>
-                        </div>
-                        <div>
-                          <span class="hidden-text-expander " onclick="ToggleClass(&quot;elem-19&quot;)">
-                            <button type="button" class="ellipsis-expander">…</button>
-                          </span>
-                        </div>
-                        <pre class="req-res prettyprint elem-19">{"success": true, "deck_id": "sw63ge9wmc5p", "cards": [{"code": "9C", "image": "https://deckofcardsapi.com/static/img/9C.png", "images": {"svg": "https://deckofcardsapi.com/static/img/9C.svg", "png": "https://deckofcardsapi.com/static/img/9C.png"}, "value": "9", "suit": "CLUBS"}, {"code": "4C", "image": "https://deckofcardsapi.com/static/img/4C.png", "images": {"svg": "https://deckofcardsapi.com/static/img/4C.svg", "png": "https://deckofcardsapi.com/static/img/4C.png"}, "value": "4", "suit": "CLUBS"}], "remaining": 48}</pre>
-                      </div>
-                      <h3>Assertions</h3>
-                      <div class="assertions">
-                        <div class="docs-example elem-16 ">
-                          <span class="state state-open">Passed</span>
-                          <span class="assertion-message clickable">
-                            <span onclick="ToggleClass(&quot;elem-16&quot;)">48 must equal 48</span>
-                            <span>
-                              <span class="hidden-text-expander inline" onclick="ToggleClass(&quot;elem-16&quot;)">
-                                <button type="button" class="ellipsis-expander">…</button>
-                              </span>
-                            </span>
-                          </span>
-                        </div>
-                        <div class="highlight elem-16 toggable ">
-                          <pre class="code prettyprint">{
-  "kind": "Assertion::Equal",
-  "expectedValue": "48",
-  "givenValue": "48"
-}</pre>
-                        </div>
-                        <div class="docs-example elem-17 ">
-                          <span class="state state-open">Passed</span>
-                          <span class="assertion-message clickable">
-                            <span onclick="ToggleClass(&quot;elem-17&quot;)">"sw63ge9wmc5p" must equal "sw63ge9wmc5p"</span>
-                            <span>
-                              <span class="hidden-text-expander inline" onclick="ToggleClass(&quot;elem-17&quot;)">
-                                <button type="button" class="ellipsis-expander">…</button>
-                              </span>
-                            </span>
-                          </span>
-                        </div>
-                        <div class="highlight elem-17 toggable ">
-                          <pre class="code prettyprint">{
-  "kind": "Assertion::Equal",
-  "expectedValue": "\"sw63ge9wmc5p\"",
-  "givenValue": "\"sw63ge9wmc5p\""
-}</pre>
-                        </div>
-                      </div>
-                      <h3>Raw data</h3>
-                      <div class="request">
-                        <div>
-                          <span class="hidden-text-expander " onclick="ToggleClass(&quot;elem-18&quot;)">
-                            <button type="button" class="ellipsis-expander">…</button>
-                          </span>
-                        </div>
-                        <pre class="req-res req-res prettyprint elem-18">{
-  "options": {
-    "headers": {
-      
-    },
-    "method": "GET",
-    "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2"
-  },
-  "request": {
-    "httpVersion": "HTTP/1.1",
-    "method": "GET",
-    "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2",
-    "path": "/api/deck/sw63ge9wmc5p/draw/?count=2",
-    "ip": "172.64.80.1",
-    "port": 443,
-    "headers": {
-      "Connection": "close",
-      "Accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
-      "Accept-Encoding": "gzip,deflate",
-      "User-Agent": "DataWeave/2.0",
-      "Host": "deckofcardsapi.com:443"
-    }
-  },
-  "timers": {
-    "dns": 0.12437699735164642,
-    "wait": 443.3410339355469,
-    "connect": 71.53942108154297,
-    "ssl": 0.008352000266313553,
-    "receive": 0.9378510117530823,
-    "total": 516.4218139648438,
-    "send": 0.012643000110983849
-  },
-  "err": false,
-  "response": {
-    "status": 200,
-    "statusText": "OK",
-    "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"cards\": [{\"code\": \"9C\", \"image\": \"https://deckofcardsapi.com/static/img/9C.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/9C.svg\", \"png\": \"https://deckofcardsapi.com/static/img/9C.png\"}, \"value\": \"9\", \"suit\": \"CLUBS\"}, {\"code\": \"4C\", \"image\": \"https://deckofcardsapi.com/static/img/4C.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/4C.svg\", \"png\": \"https://deckofcardsapi.com/static/img/4C.png\"}, \"value\": \"4\", \"suit\": \"CLUBS\"}], \"remaining\": 48}",
-    "body": {
-      "success": true,
-      "deck_id": "sw63ge9wmc5p",
-      "cards": [
-        {
-          "code": "9C",
-          "image": "https://deckofcardsapi.com/static/img/9C.png",
-          "images": {
-            "svg": "https://deckofcardsapi.com/static/img/9C.svg",
-            "png": "https://deckofcardsapi.com/static/img/9C.png"
-          },
-          "value": "9",
-          "suit": "CLUBS"
-        },
-        {
-          "code": "4C",
-          "image": "https://deckofcardsapi.com/static/img/4C.png",
-          "images": {
-            "svg": "https://deckofcardsapi.com/static/img/4C.svg",
-            "png": "https://deckofcardsapi.com/static/img/4C.png"
-          },
-          "value": "4",
-          "suit": "CLUBS"
-        }
-      ],
-      "remaining": 48
-    },
-    "mime": "application/json",
-    "contentType": "application/json",
-    "headers": {
-      "Access-Control-Allow-Origin": "*",
-      "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-      "Cf-Cache-Status": "DYNAMIC",
-      "Cf-Ray": "7afa3fa27eed5b65-IAD",
-      "Connection": "close",
-      "Content-Encoding": "gzip",
-      "Content-Type": "application/json",
-      "Date": "Wed, 29 Mar 2023 18:41:43 GMT",
-      "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-      "Referrer-Policy": "same-origin",
-      "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZGOV3KjKk5fL15M4KrsDpcVWhgNKdmhEuXkF4FcyT%2F5xRmkjUFiEnSqAQSobuWmed1PnP%2FfDcxxIl%2BLBQSVehTnMWHN%2BSYemqOn5HGwfT9nw7ohsLilJzuR5Ep58nyKMwDvPI82jj2CT\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=s57CF3ixqPrGk9prUwC9OH81hjhRsC1F8x2d9Cklc3jjGzOg7QTNHXT35kYEkcXRc9gnoGenGIgjXzf%2BF6eHy9r%2BJPB2H2aDaqNT7oth557qGU%2B08a98XDxdc0NA93h8Rb8AdnCJbe2L\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
       "Server": "cloudflare",
       "Transfer-Encoding": "chunked",
       "Vary": "Origin",

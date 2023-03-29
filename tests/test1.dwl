@@ -7,7 +7,7 @@ describe `Deck of cards` in [
   // Declaring the first test block
   it must "get a new deck of Cards" in [
     GET `https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1` with {} assert [
-      $.response.status mustEqual 200, // <--- Then a status assertion
+      $.response.status mustEqual 500, // <--- Then a status assertion
       $.response.mime mustEqual "application/json", // <--- And a MIME type assertion
       $.response.body.remaining mustEqual 52 // <--- And a boolean assertion
     ] execute [
