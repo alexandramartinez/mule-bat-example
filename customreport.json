@@ -1,0 +1,54 @@
+{
+  "my_test_suite": {
+    "Deck of cards": [
+      {
+        "GET https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1": [
+          {
+            "pass": true,
+            "result": "200 must equal 200"
+          },
+          {
+            "pass": true,
+            "result": "\"application/json\" must equal \"application/json\""
+          },
+          {
+            "pass": true,
+            "result": "52 must equal 52"
+          },
+          {
+            "pass": true,
+            "result": "Stored new value for deck_id"
+          }
+        ]
+      },
+      {
+        "GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2": [
+          {
+            "pass": true,
+            "result": "50 must equal 50"
+          },
+          {
+            "pass": true,
+            "result": "\"sw63ge9wmc5p\" must equal \"sw63ge9wmc5p\""
+          }
+        ]
+      },
+      {
+        "GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2": [
+          {
+            "pass": true,
+            "result": "48 must equal 48"
+          },
+          {
+            "pass": true,
+            "result": "\"sw63ge9wmc5p\" must equal \"sw63ge9wmc5p\""
+          },
+          {
+            "pass": true,
+            "result": "Statement execution"
+          }
+        ]
+      }
+    ]
+  }
+}

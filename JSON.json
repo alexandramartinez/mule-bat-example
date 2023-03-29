@@ -1,0 +1,512 @@
+{
+  "fileName": "",
+  "metadata": {
+    "configuration": "default"
+  },
+  "pass": true,
+  "softFail": false,
+  "kind": "TEST",
+  "prefix": "",
+  "skip": false,
+  "result": [
+    {
+      "fileName": "",
+      "metadata": {
+        
+      },
+      "pass": true,
+      "softFail": false,
+      "kind": "TEST",
+      "prefix": "DESCRIBE",
+      "skip": false,
+      "result": [
+        {
+          "fileName": "",
+          "metadata": {
+            
+          },
+          "pass": true,
+          "softFail": false,
+          "kind": "TEST",
+          "prefix": "MUST",
+          "skip": false,
+          "result": [
+            {
+              "kind": "HTTP",
+              "name": "GET https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+              "softFail": false,
+              "result": {
+                "options": {
+                  "headers": {
+                    
+                  },
+                  "method": "GET",
+                  "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
+                },
+                "request": {
+                  "httpVersion": "HTTP/1.1",
+                  "method": "GET",
+                  "url": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+                  "path": "/api/deck/new/shuffle/?deck_count=1",
+                  "ip": "172.64.80.1",
+                  "port": 443,
+                  "headers": {
+                    "Connection": "close",
+                    "Accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+                    "Accept-Encoding": "gzip,deflate",
+                    "User-Agent": "DataWeave/2.0",
+                    "Host": "deckofcardsapi.com:443"
+                  }
+                },
+                "timers": {
+                  "dns": 49.7623291015625,
+                  "wait": 316.6511535644531,
+                  "connect": 161.7046661376953,
+                  "ssl": 0.10675299912691116,
+                  "receive": 20.395164489746094,
+                  "total": 549.7551879882812,
+                  "send": 0.013059999793767929
+                },
+                "err": false,
+                "response": {
+                  "status": 200,
+                  "statusText": "OK",
+                  "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"remaining\": 52, \"shuffled\": true}",
+                  "body": {
+                    "success": true,
+                    "deck_id": "sw63ge9wmc5p",
+                    "remaining": 52,
+                    "shuffled": true
+                  },
+                  "mime": "application/json",
+                  "contentType": "application/json",
+                  "headers": {
+                    "Access-Control-Allow-Origin": "*",
+                    "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+                    "Cf-Cache-Status": "DYNAMIC",
+                    "Cf-Ray": "7afa3f9acc8559af-IAD",
+                    "Connection": "close",
+                    "Content-Encoding": "gzip",
+                    "Content-Type": "application/json",
+                    "Date": "Wed, 29 Mar 2023 18:41:41 GMT",
+                    "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                    "Referrer-Policy": "same-origin",
+                    "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2F%2FSjAbfh1vKP48DJSamvJhQa%2FpmnhO8db9oEfdzn%2Fsn7EV0D4gYs1bp7B2HvUVvQf5jyijYTP3RClh9szzHKwbvXrcqySOsWSM%2F9joW3mEuoj82b4elv%2B31cuUuQmLDKo8HNN4Rw7LoF\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                    "Server": "cloudflare",
+                    "Transfer-Encoding": "chunked",
+                    "Vary": "Origin",
+                    "X-Content-Type-Options": "nosniff",
+                    "X-Frame-Options": "DENY"
+                  }
+                }
+              },
+              "time": 549.7551879882812,
+              "prefix": "GET",
+              "startDate": "2023-03-29T14:41:41.843-04:00",
+              "assertions": [
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "200 must equal 200",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "200",
+                    "givenValue": "200"
+                  }
+                },
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "\"application/json\" must equal \"application/json\"",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "\"application/json\"",
+                    "givenValue": "\"application/json\""
+                  }
+                },
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "52 must equal 52",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "52",
+                    "givenValue": "52"
+                  }
+                },
+                {
+                  "kind": "StoreValue",
+                  "pass": true,
+                  "name": "Stored new value for deck_id",
+                  "softFail": false,
+                  "result": {
+                    "operation": "set_value",
+                    "prevValue": null,
+                    "newValue": "sw63ge9wmc5p",
+                    "key": "deck_id"
+                  }
+                }
+              ],
+              "pass": true
+            }
+          ],
+          "name": "get a new deck of Cards",
+          "time": 0,
+          "parameters": {
+            
+          },
+          "startDate": "2023-03-29T14:41:41"
+        },
+        {
+          "fileName": "",
+          "metadata": {
+            
+          },
+          "pass": true,
+          "softFail": true,
+          "kind": "TEST",
+          "prefix": "SHOULD",
+          "skip": false,
+          "result": [
+            {
+              "kind": "HTTP",
+              "name": "GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2",
+              "softFail": false,
+              "result": {
+                "options": {
+                  "headers": {
+                    
+                  },
+                  "method": "GET",
+                  "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2"
+                },
+                "request": {
+                  "httpVersion": "HTTP/1.1",
+                  "method": "GET",
+                  "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2",
+                  "path": "/api/deck/sw63ge9wmc5p/draw/?count=2",
+                  "ip": "172.64.80.1",
+                  "port": 443,
+                  "headers": {
+                    "Connection": "close",
+                    "Accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+                    "Accept-Encoding": "gzip,deflate",
+                    "User-Agent": "DataWeave/2.0",
+                    "Host": "deckofcardsapi.com:443"
+                  }
+                },
+                "timers": {
+                  "dns": 0.7007820010185242,
+                  "wait": 496.38092041015625,
+                  "connect": 0.9531630277633667,
+                  "ssl": 97.51106262207031,
+                  "receive": 1.142773985862732,
+                  "total": 597.2081298828125,
+                  "send": 0.009366000071167946
+                },
+                "err": false,
+                "response": {
+                  "status": 200,
+                  "statusText": "OK",
+                  "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"cards\": [{\"code\": \"QC\", \"image\": \"https://deckofcardsapi.com/static/img/QC.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/QC.svg\", \"png\": \"https://deckofcardsapi.com/static/img/QC.png\"}, \"value\": \"QUEEN\", \"suit\": \"CLUBS\"}, {\"code\": \"3H\", \"image\": \"https://deckofcardsapi.com/static/img/3H.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/3H.svg\", \"png\": \"https://deckofcardsapi.com/static/img/3H.png\"}, \"value\": \"3\", \"suit\": \"HEARTS\"}], \"remaining\": 50}",
+                  "body": {
+                    "success": true,
+                    "deck_id": "sw63ge9wmc5p",
+                    "cards": [
+                      {
+                        "code": "QC",
+                        "image": "https://deckofcardsapi.com/static/img/QC.png",
+                        "images": {
+                          "svg": "https://deckofcardsapi.com/static/img/QC.svg",
+                          "png": "https://deckofcardsapi.com/static/img/QC.png"
+                        },
+                        "value": "QUEEN",
+                        "suit": "CLUBS"
+                      },
+                      {
+                        "code": "3H",
+                        "image": "https://deckofcardsapi.com/static/img/3H.png",
+                        "images": {
+                          "svg": "https://deckofcardsapi.com/static/img/3H.svg",
+                          "png": "https://deckofcardsapi.com/static/img/3H.png"
+                        },
+                        "value": "3",
+                        "suit": "HEARTS"
+                      }
+                    ],
+                    "remaining": 50
+                  },
+                  "mime": "application/json",
+                  "contentType": "application/json",
+                  "headers": {
+                    "Access-Control-Allow-Origin": "*",
+                    "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+                    "Cf-Cache-Status": "DYNAMIC",
+                    "Cf-Ray": "7afa3f9e9df05a28-IAD",
+                    "Connection": "close",
+                    "Content-Encoding": "gzip",
+                    "Content-Type": "application/json",
+                    "Date": "Wed, 29 Mar 2023 18:41:42 GMT",
+                    "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                    "Referrer-Policy": "same-origin",
+                    "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7KCqjJK%2FPiwxgs%2FrzBIhvxP5gc2Y5O%2FirxzKCKRtXFXV6G79we9PbB3vSEoJAQs0mcb1ofrDsAd4F6vgoClarr1h7F3gEqC%2BV3X1KuJz9mxzn5%2BYYEti5DMSNIFsBVUdVXotkSVU1%2FIq\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                    "Server": "cloudflare",
+                    "Transfer-Encoding": "chunked",
+                    "Vary": "Origin",
+                    "X-Content-Type-Options": "nosniff",
+                    "X-Frame-Options": "DENY"
+                  }
+                }
+              },
+              "time": 597.2081298828125,
+              "prefix": "GET",
+              "startDate": "2023-03-29T14:41:42.574-04:00",
+              "assertions": [
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "50 must equal 50",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "50",
+                    "givenValue": "50"
+                  }
+                },
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "\"sw63ge9wmc5p\" must equal \"sw63ge9wmc5p\"",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "\"sw63ge9wmc5p\"",
+                    "givenValue": "\"sw63ge9wmc5p\""
+                  }
+                }
+              ],
+              "pass": true
+            }
+          ],
+          "name": "get two cards",
+          "time": 0,
+          "parameters": {
+            
+          },
+          "startDate": "2023-03-29T14:41:41"
+        },
+        {
+          "fileName": "",
+          "metadata": {
+            
+          },
+          "pass": true,
+          "softFail": true,
+          "kind": "TEST",
+          "prefix": "SHOULD",
+          "skip": false,
+          "result": [
+            {
+              "kind": "HTTP",
+              "name": "GET https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2",
+              "softFail": false,
+              "result": {
+                "options": {
+                  "headers": {
+                    
+                  },
+                  "method": "GET",
+                  "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2"
+                },
+                "request": {
+                  "httpVersion": "HTTP/1.1",
+                  "method": "GET",
+                  "url": "https://deckofcardsapi.com/api/deck/sw63ge9wmc5p/draw/?count=2",
+                  "path": "/api/deck/sw63ge9wmc5p/draw/?count=2",
+                  "ip": "172.64.80.1",
+                  "port": 443,
+                  "headers": {
+                    "Connection": "close",
+                    "Accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+                    "Accept-Encoding": "gzip,deflate",
+                    "User-Agent": "DataWeave/2.0",
+                    "Host": "deckofcardsapi.com:443"
+                  }
+                },
+                "timers": {
+                  "dns": 0.12437699735164642,
+                  "wait": 443.3410339355469,
+                  "connect": 71.53942108154297,
+                  "ssl": 0.008352000266313553,
+                  "receive": 0.9378510117530823,
+                  "total": 516.4218139648438,
+                  "send": 0.012643000110983849
+                },
+                "err": false,
+                "response": {
+                  "status": 200,
+                  "statusText": "OK",
+                  "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"cards\": [{\"code\": \"9C\", \"image\": \"https://deckofcardsapi.com/static/img/9C.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/9C.svg\", \"png\": \"https://deckofcardsapi.com/static/img/9C.png\"}, \"value\": \"9\", \"suit\": \"CLUBS\"}, {\"code\": \"4C\", \"image\": \"https://deckofcardsapi.com/static/img/4C.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/4C.svg\", \"png\": \"https://deckofcardsapi.com/static/img/4C.png\"}, \"value\": \"4\", \"suit\": \"CLUBS\"}], \"remaining\": 48}",
+                  "body": {
+                    "success": true,
+                    "deck_id": "sw63ge9wmc5p",
+                    "cards": [
+                      {
+                        "code": "9C",
+                        "image": "https://deckofcardsapi.com/static/img/9C.png",
+                        "images": {
+                          "svg": "https://deckofcardsapi.com/static/img/9C.svg",
+                          "png": "https://deckofcardsapi.com/static/img/9C.png"
+                        },
+                        "value": "9",
+                        "suit": "CLUBS"
+                      },
+                      {
+                        "code": "4C",
+                        "image": "https://deckofcardsapi.com/static/img/4C.png",
+                        "images": {
+                          "svg": "https://deckofcardsapi.com/static/img/4C.svg",
+                          "png": "https://deckofcardsapi.com/static/img/4C.png"
+                        },
+                        "value": "4",
+                        "suit": "CLUBS"
+                      }
+                    ],
+                    "remaining": 48
+                  },
+                  "mime": "application/json",
+                  "contentType": "application/json",
+                  "headers": {
+                    "Access-Control-Allow-Origin": "*",
+                    "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+                    "Cf-Cache-Status": "DYNAMIC",
+                    "Cf-Ray": "7afa3fa27eed5b65-IAD",
+                    "Connection": "close",
+                    "Content-Encoding": "gzip",
+                    "Content-Type": "application/json",
+                    "Date": "Wed, 29 Mar 2023 18:41:43 GMT",
+                    "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                    "Referrer-Policy": "same-origin",
+                    "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZGOV3KjKk5fL15M4KrsDpcVWhgNKdmhEuXkF4FcyT%2F5xRmkjUFiEnSqAQSobuWmed1PnP%2FfDcxxIl%2BLBQSVehTnMWHN%2BSYemqOn5HGwfT9nw7ohsLilJzuR5Ep58nyKMwDvPI82jj2CT\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                    "Server": "cloudflare",
+                    "Transfer-Encoding": "chunked",
+                    "Vary": "Origin",
+                    "X-Content-Type-Options": "nosniff",
+                    "X-Frame-Options": "DENY"
+                  }
+                }
+              },
+              "time": 516.4218139648438,
+              "prefix": "GET",
+              "startDate": "2023-03-29T14:41:43.142-04:00",
+              "assertions": [
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "48 must equal 48",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "48",
+                    "givenValue": "48"
+                  }
+                },
+                {
+                  "kind": "Assertion",
+                  "pass": true,
+                  "name": "\"sw63ge9wmc5p\" must equal \"sw63ge9wmc5p\"",
+                  "softFail": false,
+                  "result": {
+                    "kind": "Assertion::Equal",
+                    "expectedValue": "\"sw63ge9wmc5p\"",
+                    "givenValue": "\"sw63ge9wmc5p\""
+                  }
+                },
+                {
+                  "kind": "Execute",
+                  "pass": true,
+                  "name": "Statement execution",
+                  "softFail": true,
+                  "result": {
+                    "status": 200,
+                    "statusText": "OK",
+                    "payload": "{\"success\": true, \"deck_id\": \"sw63ge9wmc5p\", \"cards\": [{\"code\": \"9C\", \"image\": \"https://deckofcardsapi.com/static/img/9C.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/9C.svg\", \"png\": \"https://deckofcardsapi.com/static/img/9C.png\"}, \"value\": \"9\", \"suit\": \"CLUBS\"}, {\"code\": \"4C\", \"image\": \"https://deckofcardsapi.com/static/img/4C.png\", \"images\": {\"svg\": \"https://deckofcardsapi.com/static/img/4C.svg\", \"png\": \"https://deckofcardsapi.com/static/img/4C.png\"}, \"value\": \"4\", \"suit\": \"CLUBS\"}], \"remaining\": 48}",
+                    "body": {
+                      "success": true,
+                      "deck_id": "sw63ge9wmc5p",
+                      "cards": [
+                        {
+                          "code": "9C",
+                          "image": "https://deckofcardsapi.com/static/img/9C.png",
+                          "images": {
+                            "svg": "https://deckofcardsapi.com/static/img/9C.svg",
+                            "png": "https://deckofcardsapi.com/static/img/9C.png"
+                          },
+                          "value": "9",
+                          "suit": "CLUBS"
+                        },
+                        {
+                          "code": "4C",
+                          "image": "https://deckofcardsapi.com/static/img/4C.png",
+                          "images": {
+                            "svg": "https://deckofcardsapi.com/static/img/4C.svg",
+                            "png": "https://deckofcardsapi.com/static/img/4C.png"
+                          },
+                          "value": "4",
+                          "suit": "CLUBS"
+                        }
+                      ],
+                      "remaining": 48
+                    },
+                    "mime": "application/json",
+                    "contentType": "application/json",
+                    "headers": {
+                      "Access-Control-Allow-Origin": "*",
+                      "Alt-Svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+                      "Cf-Cache-Status": "DYNAMIC",
+                      "Cf-Ray": "7afa3fa27eed5b65-IAD",
+                      "Connection": "close",
+                      "Content-Encoding": "gzip",
+                      "Content-Type": "application/json",
+                      "Date": "Wed, 29 Mar 2023 18:41:43 GMT",
+                      "Nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+                      "Referrer-Policy": "same-origin",
+                      "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZGOV3KjKk5fL15M4KrsDpcVWhgNKdmhEuXkF4FcyT%2F5xRmkjUFiEnSqAQSobuWmed1PnP%2FfDcxxIl%2BLBQSVehTnMWHN%2BSYemqOn5HGwfT9nw7ohsLilJzuR5Ep58nyKMwDvPI82jj2CT\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                      "Server": "cloudflare",
+                      "Transfer-Encoding": "chunked",
+                      "Vary": "Origin",
+                      "X-Content-Type-Options": "nosniff",
+                      "X-Frame-Options": "DENY"
+                    }
+                  }
+                }
+              ],
+              "pass": true
+            }
+          ],
+          "name": "get two cards",
+          "time": 0,
+          "parameters": {
+            
+          },
+          "startDate": "2023-03-29T14:41:42"
+        }
+      ],
+      "name": "Deck of cards",
+      "time": 0,
+      "parameters": {
+        
+      },
+      "startDate": "2023-03-29T14:41:41"
+    }
+  ],
+  "name": "my_test_suite",
+  "time": 0,
+  "parameters": {
+    
+  },
+  "startDate": "2023-03-29T14:41:43"
+}

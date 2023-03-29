@@ -1,0 +1,14 @@
+suite:
+  name: "my_test_suite"
+
+files:
+  - file: tests/test1.dwl
+
+reporters:
+  - type: HTML
+    outFile: HTML.html
+  - type: JSON
+    outFile: JSON.json
+  - type: Local
+    file: reporter/customreport.dwl
+    outFile: customreport.json
