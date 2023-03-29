@@ -4,8 +4,8 @@
       {
         "GET https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1": [
           {
-            "pass": false,
-            "result": "200 must equal 500"
+            "pass": true,
+            "result": "200 must equal 200"
           },
           {
             "pass": true,
@@ -18,6 +18,34 @@
           {
             "pass": true,
             "result": "Stored new value for deck_id"
+          }
+        ]
+      },
+      {
+        "GET https://deckofcardsapi.com/api/deck/ywdne6vex86m/draw/?count=2": [
+          {
+            "pass": true,
+            "result": "50 must equal 50"
+          },
+          {
+            "pass": true,
+            "result": "\"ywdne6vex86m\" must equal \"ywdne6vex86m\""
+          }
+        ]
+      },
+      {
+        "GET https://deckofcardsapi.com/api/deck/ywdne6vex86m/draw/?count=2": [
+          {
+            "pass": true,
+            "result": "48 must equal 48"
+          },
+          {
+            "pass": true,
+            "result": "\"ywdne6vex86m\" must equal \"ywdne6vex86m\""
+          },
+          {
+            "pass": true,
+            "result": "Statement execution"
           }
         ]
       }
